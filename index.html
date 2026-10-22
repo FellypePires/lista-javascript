@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de exercícios de JavaScript</title>
+</head>
+<body>
+    <h1>Lista de exercícios de JavaScript</h1>
+    <p>Preencha os campos do exercício e clique em Calcular.</p>
+    <section>
+        <h2>1. Cotação do dólar</h2>
+        <p>Veja a cotação com aumentos de 1%, 2%, 5% e 10%.</p>
+        <form id="form1">
+            <p><label for="dolar1">Cotação atual (R$): </label><input id="dolar1" name="dolar1" type="number" step="0.01" min="0.01" required></p>
+            <button type="submit">Calcular</button>
+        </form>
+        <pre id="resultado1" style="white-space: pre-wrap;" aria-live="polite" aria-atomic="true" hidden></pre>
+    </section>
+    <hr>
+    <section>
+        <h2>2. Ingredientes da omelete</h2>
+        <p>Calcule 2 ovos e 50 gramas de queijo por pessoa.</p>
+        <form id="form2">
+            <p><label for="pessoas2">Quantidade de pessoas: </label><input id="pessoas2" name="pessoas2" type="number" step="1" min="1" required></p>
+            <button type="submit">Calcular</button>
+        </form>
+        <pre id="resultado2" style="white-space: pre-wrap;" aria-live="polite" aria-atomic="true" hidden></pre>
+    </section>
+    <hr>
+    <section>
+        <h2>3. Operações matemáticas</h2>
+        <p>Calcule a soma, a subtração, a multiplicação e a divisão.</p>
+        <form id="form3">
+            <p><label for="numero13">Primeiro número inteiro: </label><input id="numero13" name="numero13" type="number" step="1" required></p>
+            <p><label for="numero23">Segundo número inteiro: </label><input id="numero23" name="numero23" type="number" step="1" required></p>
+            <button type="submit">Calcular</button>
+        </form>
+        <pre id="resultado3" style="white-space: pre-wrap;" aria-live="polite" aria-atomic="true" hidden></pre>
+    </section>
+    <hr>
+    <section>
+        <h2>4. Pedido de pizza</h2>
+        <p>Cada sabor custa R$ 12,00 e cada refrigerante custa R$ 7,00.</p>
+        <form id="form4">
+            <p><label for="sabor14">Primeiro sabor: </label><input id="sabor14" name="sabor14" type="text" pattern=".*\S.*" required></p>
+            <p><label for="sabor24">Segundo sabor: </label><input id="sabor24" name="sabor24" type="text" pattern=".*\S.*" required></p>
+            <p><label for="sabor34">Terceiro sabor: </label><input id="sabor34" name="sabor34" type="text" pattern=".*\S.*" required></p>
+            <p><label for="sabor44">Quarto sabor: </label><input id="sabor44" name="sabor44" type="text" pattern=".*\S.*" required></p>
+            <p><label for="refrigerantes4">Quantidade de refrigerantes: </label><input id="refrigerantes4" name="refrigerantes4" type="number" step="1" min="0" required></p>
+            <button type="submit">Calcular</button>
+        </form>
+        <pre id="resultado4" style="white-space: pre-wrap;" aria-live="polite" aria-atomic="true" hidden></pre>
+    </section>
+    <hr>
+    <section>
+        <h2>5. Idade de três pessoas</h2>
+        <p>Veja as três pessoas em ordem de idade, pelo ano de nascimento.</p>
+        <form id="form5">
+            <p><label for="nome15">Nome da primeira pessoa: </label><input id="nome15" name="nome15" type="text" pattern=".*\S.*" required></p>
+            <p><label for="ano15">Ano de nascimento: </label><input id="ano15" name="ano15" type="number" step="1" min="1" max="2026" required></p>
+            <p><label for="nome25">Nome da segunda pessoa: </label><input id="nome25" name="nome25" type="text" pattern=".*\S.*" required></p>
+            <p><label for="ano25">Ano de nascimento: </label><input id="ano25" name="ano25" type="number" step="1" min="1" max="2026" required></p>
+            <p><label for="nome35">Nome da terceira pessoa: </label><input id="nome35" name="nome35" type="text" pattern=".*\S.*" required></p>
+            <p><label for="ano35">Ano de nascimento: </label><input id="ano35" name="ano35" type="number" step="1" min="1" max="2026" required></p>
+            <button type="submit">Calcular</button>
+        </form>
+        <p><small>A idade considera apenas o ano. Pessoas nascidas no mesmo ano têm a mesma idade calculada.</small></p>
+        <pre id="resultado5" style="white-space: pre-wrap;" aria-live="polite" aria-atomic="true" hidden></pre>
+    </section>
+    <hr>
+    <section>
+        <h2>6. Nota final</h2>
+        <p>Confira a situação do aluno conforme a regra da atividade.</p>
+        <form id="form6">
+            <p><label for="nota6">Nota final (0 a 10): </label><input id="nota6" name="nota6" type="number" step="0.1" min="0" max="10" required></p>
+            <button type="submit">Calcular</button>
+        </form>
+        <p><small>Regra do enunciado: acima de 6, aprovado; entre 4 e 6, substitutiva; demais notas, reprovado. Nota 6 entra em reprovado.</small></p>
+        <pre id="resultado6" style="white-space: pre-wrap;" aria-live="polite" aria-atomic="true" hidden></pre>
+    </section>
+    <hr>
+    <section>
+        <h2>7. Comparação de números</h2>
+        <p>Descubra se o primeiro número é maior, menor ou igual ao segundo.</p>
+        <form id="form7">
+            <p><label for="numero17">Primeiro número inteiro: </label><input id="numero17" name="numero17" type="number" step="1" required></p>
+            <p><label for="numero27">Segundo número inteiro: </label><input id="numero27" name="numero27" type="number" step="1" required></p>
+            <button type="submit">Calcular</button>
+        </form>
+        <pre id="resultado7" style="white-space: pre-wrap;" aria-live="polite" aria-atomic="true" hidden></pre>
+    </section>
+    <hr>
+    <section>
+        <h2>8. Divisão de turmas</h2>
+        <p>Divida a sala em grupos iguais e veja quantos alunos sobram.</p>
+        <form id="form8">
+            <p><label for="alunos8">Quantidade de alunos: </label><input id="alunos8" name="alunos8" type="number" step="1" min="0" required></p>
+            <p><label for="turmas8">Quantidade de turmas: </label><input id="turmas8" name="turmas8" type="number" step="1" min="1" required></p>
+            <button type="submit">Calcular</button>
+        </form>
+        <pre id="resultado8" style="white-space: pre-wrap;" aria-live="polite" aria-atomic="true" hidden></pre>
+    </section>
+    <hr>
+    <section>
+        <h2>9. Metas de vendas</h2>
+        <p>Confira as metas atingidas e os percentuais de vendas.</p>
+        <form id="form9">
+            <p><label for="vendido9">Valor vendido (R$): </label><input id="vendido9" name="vendido9" type="number" step="0.01" min="0" required></p>
+            <p><label for="meta9">Meta do mês (R$): </label><input id="meta9" name="meta9" type="number" step="0.01" min="0.01" required></p>
+            <p><label for="metaMinima9">Meta mínima (R$): </label><input id="metaMinima9" name="metaMinima9" type="number" step="0.01" min="0.01" required></p>
+            <button type="submit">Calcular</button>
+        </form>
+        <pre id="resultado9" style="white-space: pre-wrap;" aria-live="polite" aria-atomic="true" hidden></pre>
+    </section>
+    <script src="script.js?v=2"></script>
+</body>
+</html>
